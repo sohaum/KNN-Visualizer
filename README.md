@@ -13,7 +13,7 @@ Easily explore clustering, inertia, silhouette scores, and more!
 - 📊 Toggle Voronoi diagram for cluster boundaries
 - 🔄 Watch inertia and silhouette scores update live
 
-## Guide
+## 📚 Guide
 
 - **Step**:  
   Allows you to execute your code one step at a time, which is useful for debugging and understanding the flow of your program.
