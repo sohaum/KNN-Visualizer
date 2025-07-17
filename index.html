@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Means Clustering Visualization</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="header p-4 sticky top-0 z-10">
+        <div class="flex justify-center">
+            <div class="flex items-center space-x-6">
+                <div class="text-white text-3xl font-bold flex-shrink-0">
+                    <i class="fas fa-project-diagram mr-3"></i>
+                    <span>K-Means Clustering</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1">
+        <div class="app-container">
+            <div id="controls-panel" class="glassmorphism">
+                <div class="control-group">
+                    <label for="k-slider">K Value: <span id="k-value">3</span></label>
+                    <input type="range" id="k-slider" min="2" max="8" value="3">
+                </div>
+                <div class="control-group">
+                    <label for="points-slider">Data Points: <span id="points-value">100</span></label>
+                    <input type="range" id="points-slider" min="50" max="300" value="100" step="25">
+                </div>
+                <div class="control-group">
+                    <label for="speed-slider">Animation Speed: <span id="speed-value">Medium</span></label>
+                    <input type="range" id="speed-slider" min="1" max="5" value="3">
+                </div>
+                <div class="control-group action-buttons">
+                    <div class="button-grid">
+                        <button id="generate-btn"><i class="fas fa-random mr-2"></i>Generate Data</button>
+                        <button id="init-btn"><i class="fas fa-play mr-2"></i>Initialize</button>
+                        <button id="step-btn"><i class="fas fa-step-forward mr-2"></i>Step</button>
+                        <button id="run-btn"><i class="fas fa-play mr-2"></i>Run</button>
+                        <button id="reset-btn"><i class="fas fa-redo mr-2"></i>Reset</button>
+                        <button id="voronoi-btn"><i class="fas fa-th mr-2"></i>Voronoi</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="plot-container" class="glassmorphism">
+                <svg id="kmeans-canvas"></svg>
+                <div id="info-panel" class="info-panel">
+                    <div class="convergence-indicator" id="convergence-status">
+                        <i class="fas fa-circle"></i>
+                        <span>Ready to start</span>
+                    </div>
+                    <div class="iteration-counter" id="iteration-counter">
+                        Iteration: 0
+                    </div>
+                    <div class="statistics-grid" id="statistics">
+                        <div class="stat-item">
+                            <div class="stat-value" id="inertia-value">0</div>
+                            <div class="stat-label">Inertia</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="silhouette-value">0</div>
+                            <div class="stat-label">Silhouette</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="w-full py-4 bg-[#1a1f2e] text-center text-sm text-white mt-8">
+        <span>Made by <strong>Sohaum Ghosh</strong> &mdash; </span>
+        <a href="https://www.linkedin.com/in/sohaum-ghosh-909966251/" target="_blank" rel="noopener" class="mx-2 hover:underline">
+            <i class="fab fa-linkedin mr-1"></i>LinkedIn
+        </a>
+        <a href="https://github.com/sohaum" target="_blank" rel="noopener" class="mx-2 hover:underline">
+            <i class="fab fa-github mr-1"></i>GitHub
+        </a>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
