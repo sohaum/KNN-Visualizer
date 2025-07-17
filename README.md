@@ -66,5 +66,5 @@ cd KNN-visualizer
 ## Author
 
 Made by [Sohaum Ghosh](https://www.linkedin.com/in/sohaum-ghosh-909966251/)  
-GitHub: [sohaum](https://github.com/sohaum)
+GitHub: [sohaum](https://github.com/sohaum)  
 Inspired from: [AshishJangra27](https://github.com/AshishJangra27)
