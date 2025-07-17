@@ -4,6 +4,8 @@
 An interactive web app to visualize K-Means clustering and Voronoi diagrams.  
 Built with vanilla JavaScript, CSS, and SVG.  
 Easily explore clustering, inertia, silhouette scores, and more!
+
+
 <img width="934" height="497" alt="Screenshot 2025-07-17 160830" src="https://github.com/user-attachments/assets/afa68c13-4c15-4f26-8882-3ee58da386f6" />
 
 ## Features
