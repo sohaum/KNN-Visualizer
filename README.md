@@ -58,8 +58,8 @@ Easily explore clustering, inertia, silhouette scores, and more!
 Clone the repo and open `index.html` in your browser:
 
 ```bash
-git clone https://github.com/sohaum/knn-visualizer.git
-cd knn-visualizer
+git clone https://github.com/sohaum/KNN-visualizer.git
+cd KNN-visualizer
 # Open index.html in your browser
 ```
 
