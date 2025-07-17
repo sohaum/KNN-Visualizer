@@ -13,6 +13,17 @@ Easily explore clustering, inertia, silhouette scores, and more!
 - 📊 Toggle Voronoi diagram for cluster boundaries
 - 🔄 Watch inertia and silhouette scores update live
 
+## Guide
+
+- **Step**:  
+  Allows you to execute your code one step at a time, which is useful for debugging and understanding the flow of your program.
+
+- **Run**:  
+  Runs your entire code or project, showing the output and any errors in the terminal or output pane.
+
+- **Generate**:  
+  Automatically creates code, tests, or other content based on your prompts or selections, helping you scaffold new files or add missing logic quickly.
+
 ## Visual Enhancements
 
 - Glassmorphism Design: Modern frosted glass effects with backdrop blur
